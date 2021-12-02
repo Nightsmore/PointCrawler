@@ -14,6 +14,19 @@ namespace ConnectDots
             new Vector3(-3,0,0)
         };
 
+        static Vector3[] sides = {
+            new Vector3(1,0,0),
+            new Vector3(-0,0,0),
+            new Vector3(0,1,0),
+            new Vector3(0,-1,0),
+            new Vector3(0,0,1),
+            new Vector3(0,0,-1),
+        };
+
+        static Vector3 reletivePointA = new Vector3(5, 27, 0);
+        static Vector3 reletivePointB = new Vector3(18, 13, 0);
+
+
         static int pointsIndex;
 
         static Vector3 _vect = new Vector3(0, 0, 0);
@@ -25,7 +38,7 @@ namespace ConnectDots
             pointsIndex = 0;
 
             isRunning = true;
-            Console.S
+            
             while(isRunning)
             {
                 System.Threading.Thread.Sleep(100);

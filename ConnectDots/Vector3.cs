@@ -15,5 +15,20 @@ namespace ConnectDots
             this.z = z;
             this.y = y;
         }
+
+        public static float Distance(Vector3 a, Vector3 b)
+        {
+            return 1f;// 
+        }
+
+        public static Vector3 operator +(Vector3 a, Vector3 b)
+        { 
+            return new Vector3((a.x + b.x), (a.y + b.y), (a.z + b.z));
+        }
+
+        public static Vector3 operator -(Vector3 a, Vector3 b)
+        {
+            return new Vector3((a.x - b.x), (a.y - b.y), (a.z - b.z));
+        }
     }
 }
