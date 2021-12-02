@@ -18,7 +18,13 @@ namespace ConnectDots
 
         public static float Distance(Vector3 a, Vector3 b)
         {
-            return 1f;// 
+            float f;
+
+            Vector3 v = a - b;
+
+            f = (v.x + v.y + v.z);
+
+            return f;
         }
 
         public static Vector3 operator +(Vector3 a, Vector3 b)
